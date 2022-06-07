@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @CrossOrigin
 @RestController
-@RequestMapping("api/some-resources")
+@RequestMapping("api/resorts")
 public class ResortController {
   @Autowired
   private ResortService resortService;
