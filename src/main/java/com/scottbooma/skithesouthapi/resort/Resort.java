@@ -28,4 +28,19 @@ public class Resort {
 
   @Column(name = "label")
   private String label;
+
+  @Column(name = "elevation")
+  private String elevation;
+
+  @Column(name = "vertical")
+  private String vertical;
+
+  @Column(name = "acres")
+  private short acres;
+
+  @Column(name = "trails")
+  private short trails;
+
+  @Column(name = "lifts")
+  private short lifts;
 }
