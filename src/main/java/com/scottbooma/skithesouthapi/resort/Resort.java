@@ -43,4 +43,19 @@ public class Resort {
 
   @Column(name = "lifts")
   private short lifts;
+
+  @Column(name = "snow_report_url")
+  private short snowReportUrl;
+
+  @Column(name = "webcams_url")
+  private short webcamsUrl;
+
+  @Column(name = "weather_url")
+  private short weatherUrl;
+
+  @Column(name = "lift_tickets_url")
+  private short liftTicketsUrl;
+
+  @Column(name = "rentals_url")
+  private short rentalsUrl;
 }
