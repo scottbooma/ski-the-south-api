@@ -10,12 +10,7 @@ INSERT INTO resort (
     vertical, 
     acres, 
     trails, 
-    lifts,
-    snow_report_url,
-    webcams_url,
-    weather_url,
-    lift_tickets_url,
-    rentals_url
+    lifts
 ) VALUES (
     288, 
     'Cataloochee Ski Area', 
@@ -26,12 +21,7 @@ INSERT INTO resort (
     '740''', 
     50, 
     18, 
-    5,
-    'https://cataloochee.com/the-mountain/snow-report/',
-    'https://cataloochee.com/the-mountain/webcams/',
-    'https://cataloochee.com/the-mountain/weather/',
-    'https://cataloochee.com/tickets-passes/lift-tickets/',
-    'https://cataloochee.com/planning/rentals/'
+    5
 ),(
     287,
     'Beech Mountain Resort',
@@ -42,12 +32,7 @@ INSERT INTO resort (
     '830''', 
     95, 
     17, 
-    8,
-    'https://www.beechmountainresort.com/mountain/winter-trail-map/',
-    'https://www.beechmountainresort.com/mountain/webcams/',
-    'https://www.beechmountainresort.com/mountain/weather/',
-    'https://www.beechmountainresort.com/tickets-passes/winter-slope-tickets/',
-    'https://www.beechmountainresort.com/lessons-and-rentals/equipment-rentals/'
+    8
 ),(
     290, 
     'Sugar Mountain Resort', 
@@ -58,10 +43,5 @@ INSERT INTO resort (
     '1,200''', 
     125, 
     21, 
-    8,
-    'http://www.skisugar.com/trailmap/',
-    'http://www.skisugar.com/cams/',
-    'http://www.averyweather.com/Forecast/Sugar+Mountain',
-    'http://www.skisugar.com/tickets/',
-    'http://www.skisugar.com/rentals/'
+    8
 );
