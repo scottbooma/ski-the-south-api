@@ -10,9 +10,10 @@ INSERT INTO resort (
     vertical, 
     acres, 
     trails, 
-    lifts
+    lifts,
+    snow_report_url
 ) VALUES (
-    288, 
+    288,
     'Cataloochee Ski Area', 
     'Maggie Valley, NC', 
     'cataloochee-logo.png', 
@@ -21,7 +22,8 @@ INSERT INTO resort (
     '740''', 
     50, 
     18, 
-    5
+    5,
+    'https://cataloochee.com/the-mountain/snow-report/'
 ),(
     287,
     'Beech Mountain Resort',
@@ -32,7 +34,8 @@ INSERT INTO resort (
     '830''', 
     95, 
     17, 
-    8
+    8,
+    'https://cataloochee.com/the-mountain/snow-report/'
 ),(
     290, 
     'Sugar Mountain Resort', 
@@ -43,5 +46,6 @@ INSERT INTO resort (
     '1,200''', 
     125, 
     21, 
-    8
+    8,
+    'https://cataloochee.com/the-mountain/snow-report/'
 );

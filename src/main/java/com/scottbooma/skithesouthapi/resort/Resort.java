@@ -43,4 +43,7 @@ public class Resort {
 
   @Column(name = "lifts")
   private short lifts;
+
+  @Column(name = "snow_report_url")
+  private String snowReportUrl;
 }
