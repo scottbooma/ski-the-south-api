@@ -10,8 +10,7 @@ INSERT INTO resort (
     vertical, 
     acres, 
     trails, 
-    lifts,
-    snow_report_url
+    lifts
 ) VALUES (
     288,
     'Cataloochee Ski Area', 
@@ -22,8 +21,7 @@ INSERT INTO resort (
     '740''', 
     50, 
     18, 
-    5,
-    'https://cataloochee.com/the-mountain/snow-report/'
+    5
 ),(
     287,
     'Beech Mountain Resort',
@@ -34,8 +32,7 @@ INSERT INTO resort (
     '830''', 
     95, 
     17, 
-    8,
-    'https://cataloochee.com/the-mountain/snow-report/'
+    8
 ),(
     290, 
     'Sugar Mountain Resort', 
@@ -46,6 +43,5 @@ INSERT INTO resort (
     '1,200''', 
     125, 
     21, 
-    8,
-    'https://cataloochee.com/the-mountain/snow-report/'
+    8
 );
