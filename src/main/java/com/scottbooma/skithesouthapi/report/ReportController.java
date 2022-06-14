@@ -37,7 +37,7 @@ public class ReportController {
 
   private Map<String, Report> createHashSingular(Report report){
     Map<String, Report> response = new HashMap<String, Report>();
-    response.put("someResource", report);
+    response.put("report", report);
 
     return response;
   }
