@@ -5,14 +5,20 @@ import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.scottbooma.skithesouthapi.exception.ResourceNotFoundException;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 
 @CrossOrigin
 @RestController
@@ -33,6 +39,22 @@ public class ReportController {
   public Map<String, Report> create(@Validated @RequestBody Report report) {
     Report createdReport = reportService.create(report);
     return createHashSingular(createdReport);
+  }
+
+  @PutMapping("/{id}")
+  @ResponseStatus(HttpStatus.CREATED)
+  public Map<String, Report> update(@RequestBody Report report, @PathVariable Long id) {
+    Report updatedReport = reportService
+      .update(report)
+      .orElseThrow(() -> new ResourceNotFoundException("No report with that ID"));
+
+    return createHashSingular(updatedReport);
+  }
+
+  @DeleteMapping("/{id}")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public void delete(@PathVariable Long id) {
+    reportService.deleteById(id);
   }
 
   private Map<String, Report> createHashSingular(Report report){
