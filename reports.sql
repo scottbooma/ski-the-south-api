@@ -8,28 +8,28 @@ INSERT INTO reports (
     description,
     label
 ) VALUES (
-    1,
+    10000,
     'Doug',
     '2022-02-18',
     3,
     'Slope conditions were pretty good overall. Got there for first tracks and the corduroy was great. It got very busy around lunch time, I guess the holiday crowds are showing up early. Was pretty tracked out by 11am. Left around noon because it was a 15+ minute wait for the lifts.',
     'cataloochee'
 ),(
-    2,
+    20000,
     'skibro',
     '2022-02-16',
     7,
     'It was pretty icy all day but there was no one here! I got like 20 runs in by lunch. No lines for beers either!',
     'cataloochee'
 ),(
-    3,
+    30000,
     'John P',
     '2022-02-15',
     5,
     'Icy but fun night skiing.',
     'cataloochee'
 ),(
-    4,
+    40000,
     'Shredder Girl',
     '2022-02-14',
     10,
